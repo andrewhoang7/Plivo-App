@@ -1,6 +1,6 @@
 #!/Library/Frameworks/Python.framework/Versions/3.5/bin/python3
 import plivo
-client = plivo.RestClient(auth_id='MAMJDMZGIYNMMZNWU0MJ',auth_token='Y2IwNjczNTdiYjU3MTcyNDZjNDAwMjM2ZjhmZjI2')
+client = plivo.RestClient(auth_id='INSERT AUTH ID HERE',auth_token='INSERT AUTH TOKEN HERE')
 response = client.messages.list(
     limit=20,
     offset=0,

@@ -22,12 +22,12 @@ print ("</html>")
 
 def sendSMS(dest_number, text):
     dst = dest_number
-    client = plivo.RestClient(auth_id='MAMJDMZGIYNMMZNWU0MJ', auth_token='Y2IwNjczNTdiYjU3MTcyNDZjNDAwMjM2ZjhmZjI2')
+    client = plivo.RestClient(auth_id='INSERT AUTH ID HERE', auth_token='INSERT AUTHTOKEN HERE')
     message_created = client.messages.create(
-        src=('+15613598221'),
+        src=('NUMBER YOU BOUGHT ON PLIVO'),
         dst=dest_number,
         text=text,
-        url='https://api.plivo.com/v1/Account/MAMJDMZGIYNMMZNWU0MJ/Message/'
+        url='INSERT API ENDPOINT HERE'
     )
 
 def main():
